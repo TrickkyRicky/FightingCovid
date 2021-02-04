@@ -1,0 +1,133 @@
+.Login {
+	background: url("https://www.publicdomainpictures.net/pictures/330000/velka/corona-virus-1585192949qw7.jpg")
+		center center/cover no-repeat;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.Overlay {
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	min-height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Login_box {
+	border-radius: 10px;
+	width: 400px;
+	height: 350px;
+	background-color: #1e1e1e;
+	margin-bottom: 50px;
+	animation: fadeIn 1.25s ease-in;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.Login header {
+	width: 100%;
+	height: auto;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	font-size: 14px;
+	text-align: center;
+	color: #bfbfbf;
+	font-weight: bold;
+	background: #121212;
+	border: #2d2d2d solid 1px;
+	margin-bottom: 30px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.Login h1 {
+	color: white;
+}
+
+.Input_container {
+	margin-top: 2rem;
+}
+
+.Login input {
+	width: 75%;
+	font-size: 1.6rem;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 40px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	outline: none;
+	background: #141414;
+	margin: auto;
+	display: block;
+}
+.Login input::placeholder {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.Login input[type="name"] {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top: #0b0b0b solid 1px;
+}
+.Login input[type="password"] {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: #0b0b0b 1px solid;
+	border-bottom: #353535 1px solid;
+}
+
+.Login button {
+	width: 240px;
+	height: 45px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-radius: 6px;
+	border: none;
+	border-top: #4eb2a8 1px solid;
+	border-bottom: #161616 1px solid;
+	background: #349e92;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 -1px #1d7464, 0 1px #7bb8b3;
+	margin-top: 3rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.Login button:hover {
+	transition: all 0.3s;
+	transform: translateY(-4px);
+}
+
+.Login .WrongBoth,
+.Login .WrongPass {
+	border: 1px solid red !important;
+	background: rgba(255, 0, 0, 0.4);
+}
+
+.Login .Attempts:disabled,
+.Login .Attempts[disabled],
+.Login .Attempts {
+	background-color: grey !important;
+}
+
+@media only screen and (max-width: 700px) {
+	.Login_box {
+		width: 350px;
+	}
+}

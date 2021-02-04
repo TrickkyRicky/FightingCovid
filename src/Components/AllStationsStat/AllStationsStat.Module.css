@@ -1,0 +1,236 @@
+.AllStationsStat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.AllSS3,
+.AllSS2 {
+  display: flex;
+  width: 100%;
+}
+
+.AllSS3 .Card {
+  background-color: #191c24;
+  color: white;
+  max-width: 33.333%;
+  width: 100%;
+  height: 18.5rem;
+  border-radius: 5px;
+  margin: 0 1.2rem 2.4rem 1.2rem;
+}
+
+.AllSS3 .Content {
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AllSS3 .CardContent1 {
+  font-size: 2.5rem;
+  display: flex;
+}
+
+.AllSS3 .CardContent1 h3 {
+  padding-right: 5px;
+}
+
+.AllSS3 .Card .CardContent2 {
+  transition: color 1s;
+}
+
+.Icon {
+  margin-top: 3px;
+}
+
+.AllSS3 .Card:hover .CardContent2 {
+  transition: color 1s;
+  color: rgba(0, 255, 255, 0.8);
+}
+
+.AllSS3 p {
+  font-size: 1.5rem;
+  color: #6c7293;
+  /* margin-top: 1px; */
+}
+
+.HU_Container,
+.CA_Container {
+  background-color: #191c24;
+  color: white;
+  height: auto !important;
+  border-radius: 5px;
+  margin: 0 1.2rem 2.4rem 1.2rem;
+}
+
+.AllSS2 .HU_Container {
+  /* max-width: 40%; */
+  min-width: 40%;
+}
+
+.AllSS2 .HU {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AllSS2 .HU .HU_Square {
+  background-color: #12151e;
+  padding: 2rem 2.4rem;
+  width: 90%;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AllSS2 .HU .HU_Square h6 {
+  font-size: 1.5rem;
+}
+.AllSS2 .HU .HU_Square p {
+  margin-top: 5px;
+  font-size: 1.4rem;
+  color: #6c7293;
+}
+
+.AllSS2 .CA_Container {
+  /* max-width: 60%; */
+  min-width: 50%;
+}
+
+.AllSS2 .CA_Container h5 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* .Size_Carousel {
+  max-width: inherit;
+  width: 1000px;
+  margin: auto;
+} */
+
+.SliderImg {
+  width: 100%;
+  /* margin: auto; */
+  /* height: 400px; */
+  border-radius: 10px;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+
+/* utility */
+.Padding {
+  padding: 2.5rem;
+  height: 100%;
+}
+
+.Padding h5 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+/* @media only screen and (max-width: 1700px) {
+  .Size_Carousel {
+    max-width: 900px;
+  }
+} */
+
+/* @media only screen and (max-width: 1550px) {
+  .Size_Carousel {
+    max-width: 600px;
+  }
+} */
+
+@media only screen and (max-width: 1400px) {
+  /* .Size_Carousel {
+    max-width: 550px;
+  } */
+  /* .HU_Container,
+	.CA_Container {
+		height: auto !important;
+	} */
+}
+
+@media only screen and (max-width: 1325px) {
+  .AllSS2 {
+    flex-wrap: wrap;
+  }
+  .AllSS2 .CA_Container,
+  .AllSS2 .HU_Container {
+    max-width: 100%;
+    width: 100%;
+  }
+  /* .Size_Carousel {
+    max-width: 800px;
+  } */
+}
+
+@media only screen and (max-width: 1270px) {
+  .AllSS3 {
+    flex-wrap: wrap;
+  }
+
+  .AllSS3 .Card {
+    max-width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 1160px) {
+  .Size_Carousel {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .Size_Carousel {
+    max-width: 550px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .Size_Carousel {
+    max-width: 450px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Size_Carousel {
+    max-width: 350px;
+  }
+} */
+
+@media only screen and (max-width: 420px) {
+  .AllSS3 .CardContent1 h3 {
+    font-size: 2.7rem;
+  }
+  .AllSS2 .HU .HU_Square {
+    width: 100%;
+    padding: 2.4rem 1rem;
+  }
+  /* .Size_Carousel {
+    max-width: 280px;
+  } */
+}
+
+@media only screen and (max-width: 375px) {
+  .AllSS2 .HU_Container canvas {
+    width: 250px !important;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* .Size_Carousel {
+    max-width: 250px;
+  } */
+  .AllSS2 .HU .HU_Square {
+    padding: 2.4rem 1rem;
+  }
+  .AllSS2 .HU .HU_Square h6 {
+    font-size: 1.4rem;
+  }
+  .AllSS2 .HU .HU_Square p {
+    font-size: 1.2rem;
+  }
+}

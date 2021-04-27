@@ -8,6 +8,7 @@ so that users could easily navigate and view data.
 - React Redux (global store for state management)
 - React Router (used to handle page routes)
 - Axios (handles http request)
+
 These are the most important packages, but there are many more you can check out in the package.json file.
 ## View Site Here
 ### https://fighting-covid-aee84.web.app/
